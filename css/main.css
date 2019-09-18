@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background: linear-gradient(gray, silver);
+}
+
+#container {
+    background-color: whitesmoke;
+    height: 525px;
+    width: 360px;
+    margin: 100px auto; /* Give the element a margin of 100px on the top and bottom and automatically calculate the left and right margin to center it horizontially. */
+    border-radius: 20px; /* Round off the edges of the element. */
+    box-shadow: 10px 10px 5px black; /* Box shadow properties: horizontal offset*, vertical offset*, blur, spread, color;  (* required)   */
+}
+
+h1 {
+    background-color: cyan;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    padding: 10px 100px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    margin-left: 20px;
+}
+
+[type="text"] {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+[type="text"]:focus {
+    border: solid 3px cyan;
+    outline: none;
+}
+
+[type="button"] {
+    background-color: cyan;
+    padding: 15px;
+    border-radius: 5px;
+}
