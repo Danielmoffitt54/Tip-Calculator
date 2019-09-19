@@ -1,6 +1,7 @@
 body {
+    height: 100vh;
     margin: 0;
-    background: linear-gradient(gray, silver);
+    background: linear-gradient( lightcyan, silver);
 }
 
 #container {
@@ -13,7 +14,7 @@ body {
 }
 
 h1 {
-    background-color: cyan;
+    background-color: silver;
     text-align: center;
     border-radius: 20px 20px 0 0;
     padding: 10px 100px;
@@ -27,18 +28,37 @@ p {
     margin-left: 20px;
 }
 
-[type="text"] {
+[type="text"], select, label {
     margin-left: 20px;
     font-size: 14px;
 }
 
-[type="text"]:focus {
-    border: solid 3px cyan;
-    outline: none;
+#billAmt {
+    margin-left: 5px;
 }
 
 [type="button"] {
-    background-color: cyan;
-    padding: 15px;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 30px auto;
+    background-color: lightcyan;
     border-radius: 5px;
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+[type="button"]:hover, select:hover {
+    cursor: pointer;
+}
+
+[type="button"]:hover {
+    background-color: cyan;
+}
+
+[type="text"]:focus, select:focus,[type="button"]:focus {
+    border: solid 3px lightcyan;
+    outline: none;
+}
+
