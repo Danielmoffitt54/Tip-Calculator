@@ -11,6 +11,7 @@ body {
     margin: 100px auto; /* Give the element a margin of 100px on the top and bottom and automatically calculate the left and right margin to center it horizontially. */
     border-radius: 20px; /* Round off the edges of the element. */
     box-shadow: 10px 10px 5px black; /* Box shadow properties: horizontal offset*, vertical offset*, blur, spread, color;  (* required)   */
+    font-family: 'Maven Pro', sans-serif;
 }
 
 h1 {
@@ -44,9 +45,16 @@ p {
     margin: 30px auto;
     background-color: lightcyan;
     border-radius: 5px;
+    border: solid 2px silver;
     font-size: 16pt;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+#resetBtn {
+    width: 100px;
+    height: 40px;
+    margin: 15px auto;
 }
 
 [type="button"]:hover, select:hover {
@@ -58,13 +66,17 @@ p {
 }
 
 [type="text"]:focus, select:focus,[type="button"]:focus {
-    border: solid 3px lightcyan;
+    border: solid 3px black;
     outline: none;
 }
 
 #tipAmount {
     text-align: center;
-    font-size: 30pt;
+    font-size: 20pt;
     font-weight: bold;
+}
+
+span, small {
+    display: block;
 }
 

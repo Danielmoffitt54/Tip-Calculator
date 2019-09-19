@@ -8,13 +8,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Link for main.css -->
     <link href="../css/main.css" rel="stylesheet">
+    <!-- Link for Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
 </head>
+<!-- 
+    Tip Calculator Challenges: 
+        1) Add a reset button that resets all the input fields and makes it so the tip isn't displayed any more.
+        2) Right now our tip calculator just displays the tip amount for each person. In addition to that, make it so that the total price per meal for each person is displayed as well. (Total they have to pay of the original bill + tip)
+-->
 <body>
     <!-- Container for the tip calculator -->
     <div id="container">
         <h1>tip calculator</h1>
         <!-- Container for user inputs and submit button -->
-        <div id="">
+        <div>
             <!-- Form to hold our tip calculator inputs -->
             <form>
                 <!-- Bill Amount -->
@@ -38,9 +45,14 @@
             </form>
             <!-- Return  div -->
             <div id="tipAmount" style="display: none;">
-                <sup>$</sup><span id="tip">0.00</span>
-                <small>each</small>
+                <!-- Displays tip -->
+                <span id="displayTipResult"></span>
+                <!-- Displays total plus tip -->
+                <span id="displayTotalResult"></span>
+                <small>per person</small>
             </div>
+            <!-- Reset button -->
+            <input id="resetBtn" type="button" value="Reset">
         </div>
     </div>
     <!-- Script for scripts.js -->
